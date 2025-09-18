@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeton - One app for all needs</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Jeton</span>
+            </div>
+            <div class="nav-menu">
+                <div class="nav-links">
+                    <div class="language-selector">
+                        <span class="globe-icon">🌍</span>
+                        <span>EN</span>
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <button class="nav-btn login-btn">Log in</button>
+                    <button class="nav-btn signup-btn">Sign up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">One app</span>
+                    <span class="title-line">for all needs</span>
+                </h1>
+                <div class="hero-subtitle">
+                    <p>Single account for all your payments.</p>
+                </div>
+                <div class="app-download">
+                    <button class="download-btn app-store">
+                        <span class="download-icon">📱</span>
+                        <span class="download-text">App Store</span>
+                    </button>
+                    <button class="download-btn google-play">
+                        <span class="download-icon">🤖</span>
+                        <span class="download-text">Google Play</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <canvas id="hero-canvas"></canvas>
+                <div class="floating-elements">
+                    <div class="floating-card card-1">Personal</div>
+                    <div class="floating-card card-2">Business</div>
+                    <div class="floating-card card-3">Company</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-footer">
+            <div class="store-badge">Store</div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">➕</div>
+                    <h3>Add</h3>
+                    <p>All currencies</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📤</div>
+                    <h3>Send</h3>
+                    <p>One App</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Exchange</h3>
+                    <p>Move your money across Europe</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Steps -->
+    <section class="process">
+        <div class="container">
+            <h2 class="section-title">Simple, fast & safe</h2>
+            <div class="process-steps">
+                <div class="step active" data-step="1">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Account</h3>
+                        <p>Create your account</p>
+                    </div>
+                </div>
+                <div class="step" data-step="2">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Add</h3>
+                        <p>Add money to your account</p>
+                    </div>
+                </div>
+                <div class="step" data-step="3">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Method</h3>
+                        <p>Choose payment method</p>
+                    </div>
+                </div>
+                <div class="step" data-step="4">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Review</h3>
+                        <p>Review your transaction</p>
+                    </div>
+                </div>
+                <div class="step" data-step="5">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <h3>Done</h3>
+                        <p>Transaction completed</p>
+                    </div>
+                </div>
+            </div>
+            <button class="restart-btn">Restart</button>
+        </div>
+    </section>
+
+    <!-- App Showcase -->
+    <section class="app-showcase">
+        <div class="container">
+            <h2 class="section-title">All your finances, in one app.</h2>
+            <p class="section-subtitle">Join 1M+ happy users today.</p>
+            <div class="showcase-content">
+                <button class="cta-btn">Get Started</button>
+                <div class="app-buttons">
+                    <button class="download-btn google-play">
+                        <span class="download-icon">🤖</span>
+                        <span class="download-text">Google Play</span>
+                    </button>
+                    <button class="download-btn app-store">
+                        <span class="download-icon">📱</span>
+                        <span class="download-text">App Store</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Card Section -->
+    <section class="card-section">
+        <div class="container">
+            <h2 class="section-title">Jeton Card</h2>
+            <h3 class="section-subtitle">Contactless payments? Sure. Spending limits? Check. Card freezing? Also check.</h3>
+            <p class="section-description">Jeton Card: Your Go-To for Every Purchase</p>
+            <button class="learn-more-btn">Learn more</button>
+        </div>
+    </section>
+
+    <!-- Exchange Section -->
+    <section class="exchange">
+        <div class="container">
+            <h2 class="section-title">Exchange</h2>
+            <p class="section-subtitle">Convert fiat cash easily.</p>
+            <div class="exchange-widget">
+                <div class="currency-input">
+                    <div class="currency-selector">
+                        <span class="currency-flag">🇪🇺</span>
+                        <span class="currency-code">EUR</span>
+                    </div>
+                    <input type="number" value="1000" class="amount-input">
+                </div>
+                <div class="exchange-arrow">⇄</div>
+                <div class="currency-output">
+                    <div class="currency-selector">
+                        <span class="currency-flag">🇬🇧</span>
+                        <span class="currency-code">GBP</span>
+                    </div>
+                    <input type="number" value="850" class="amount-input" readonly>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Hear it from our clients</h2>
+            <div class="testimonials-carousel">
+                <div class="testimonial active">
+                    <div class="testimonial-tag">Recommended</div>
+                    <p class="testimonial-text">Very happy with the app. Does what it says, simple payments and transactions. Quick account verification and withdrawals. 24/7 support available.</p>
+                    <div class="testimonial-author">
+                        <span class="author-initial">VK</span>
+                        <span class="author-name">Vamsi K.</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-tag">Awesome app very user friendly</div>
+                    <p class="testimonial-text">Would highly recommend Jeton to my friends.</p>
+                    <div class="testimonial-author">
+                        <span class="author-initial">LA</span>
+                        <span class="author-name">Leonie A.</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-tag">The best payment solution for German customers</div>
+                    <p class="testimonial-text">I've been a Jeton user for a few years! The support was always great and I'm always able to make my payments to the websites I want with no problem.</p>
+                    <div class="testimonial-author">
+                        <span class="author-initial">KR</span>
+                        <span class="author-name">Karl R.</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-tag">Easy and Fast</div>
+                    <p class="testimonial-text">Great app for fast and easy transfers. I have been using Jeton for a while now without any problem. I have recently started using their Jeton Card for my everyday purchases too.</p>
+                    <div class="testimonial-author">
+                        <span class="author-initial">DP</span>
+                        <span class="author-name">Dennis P.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2 class="section-title">1 million users, plus you.</h2>
+            <p class="section-subtitle">It only takes few seconds to get started.</p>
+            <div class="app-buttons">
+                <button class="download-btn app-store">
+                    <span class="download-icon">📱</span>
+                    <span class="download-text">App Store</span>
+                </button>
+                <button class="download-btn google-play">
+                    <span class="download-icon">🤖</span>
+                    <span class="download-text">Google Play</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact">
+        <div class="container">
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Full Name" class="form-input">
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email address" class="form-input">
+                </div>
+                <div class="form-group">
+                    <div class="phone-input">
+                        <span class="country-flag">🇵🇹</span>
+                        <span class="country-code">+351</span>
+                        <input type="tel" placeholder="Phone number" class="form-input">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your message" class="form-input form-textarea"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
